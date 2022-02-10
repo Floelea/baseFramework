@@ -35,6 +35,20 @@ class Response{
     
     }
 
+    public static function json($messageClient, ?string $methodeSpe = null){
+
+        header('Access-Control-Allow-Headers: *');
+        header('Access-Control-Allow-Origin: *');
+        
+        if($methodeSpe == "delete"){
+            header('Access-Control-Allow-Methods: DELETE');
+        }
+        if($methodeSpe == "put"){
+            header('Access-Control-Allow-Methods: PUT');
+        }
+        echo json_encode($messageClient);
+    }
+
 }
 
 

@@ -71,7 +71,7 @@ abstract class AbstractModel{
         /**
         * permet de supprimer un element par le moyen de son id
         * 
-        * @param int $id
+        * @param $objetDUneClasse
         * 
         * 
         */

@@ -3,6 +3,6 @@
         
 <div class="d-flex justify-content-center mt-5">
 
-        <a href="" class="btn btn-success" >Accès a l'examen</a>
+        <a href="?type=velo&action=index" class="btn btn-success" >Accès a l'examen</a>
 
 </div>

@@ -10,21 +10,24 @@
 <body>
     
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg bg-primary text-white">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.php">Cocktails</a>
+        <a class="navbar-brand" href="index.php?type=velo&action=index">Vélos</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
 
     </div>
-
+    
     <!-- <a href="?type=cocktail&action=new"class="btn btn-success" >Créez votre cocktail</a>
     <a href="?type=info&action=index"class="btn btn-success" >Voir les infos</a>
     <a href="?type=info&action=new" class="btn btn-success">Créez votre info</a>
     <a href="?type=pizza&action=index" class="btn btn-success">Voir les pizzas</a>
     <a href="?type=pizza&action=new" class="btn btn-success">Créez votre pizza</a> -->
-
+    <a href="?type=velo&action=new" class="btn btn-success">Créer un vélo</a>
+    <a href="?type=user&action=signUp" class="btn btn-success">Créer votre compte</a>
+    <a href="?type=user&action=signin" class="btn btn-success">Connectez vous</a>
+    <a href="?type=user&action=signout" class="btn btn-success">Déconnexion</a>
 </nav>
 
 
@@ -35,7 +38,7 @@
 
             <div class="container mt-4">
 
-
+         <?php     var_dump($_SESSION)  ?>
 
                     <?= $pageContent ?>
 
